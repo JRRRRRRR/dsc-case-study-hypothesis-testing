@@ -48,7 +48,7 @@ def detect_abnormality(lst_of_distributions):
     for i in lst_of_distributions:
         shapiro = stats.shapiro(i)
         if shapiro[1] < 0.05:
-            print(f"The distribution at index {count} is not normally distributed")
+            print(f"The distribution at index {count} is not normally distributed, with has a p-value of {shapiro[1]} on the Shapiro test")
         count += 1
 
 def anova_test(formula, df):
