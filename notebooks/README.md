@@ -8,6 +8,8 @@ There is also a functions.py file from which one can import the various function
 Our conclusions
 Q1 - We reject the Null hypothesis and state there is not no relation between quantity ordered and discount
 
-Q2 - The shapiro test with p-value 0.00118 which is less than 0.05. We can reject the null hypothises. Therefore the data does not fit the normal distribution. And we choose wilcoxon test which gives us p_value 0 which is less than 0.05. We can reject the null hypothises. Therefore there is difference in number of orders and territory
+Q2 - We use anova test here to test the quantities in different territories.
+The p-value is 0.55 which is greater than 0.05. We fail to reject the null hypothises.
+Therefore there is no difference in number of orders and territory.
 
 Q3 - There was indeed a connection between employees and total order price, as well as a connection between employees and total order quantity. Some employees outperforming others. Anne and Robert, in particular, excelled. See the notebooks for details.
